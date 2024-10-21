@@ -1,7 +1,7 @@
-# Проект 2. Riiid AIEd Challenge 2020 part 1 EDA.
+# Riiid AIEd Challenge 2020 part 1 EDA.
 
 ## Ссылка на проект.
-[Открыть ноутбук](https://github.com/Vendor62/MIPT_practice/blob/main/project_2/RIIID_AIED_EDA.ipynb)
+[Открыть ноутбук](https://github.com/Vendor62/MIPT_practice/blob/main/homework/py_hw_1/RIIID_AIED_EDA.ipynb)
 
 ## Описание проекта.
 В приложенных файлах вы увидите данные по прохождению студентами тестов на образовательной платформе. Такие данные могут быть использованы для построения персонализированных ИИ-ассистентов для поддержки обучения студента. На текущем этапе сосредоточимся на начальном этапе — сборе и подготовке данных.
