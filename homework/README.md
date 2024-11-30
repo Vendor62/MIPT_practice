@@ -6,4 +6,4 @@
 [ДЗ_1 Линейная регрессия](https://github.com/Vendor62/MIPT_practice/tree/main/homework/ml_hw_1)<br>
 [ДЗ_2 Градиентный спуск](https://github.com/Vendor62/MIPT_practice/tree/main/homework/ml_hw_2)<br><br>
 ## Цифровая кафедра
-[ДЗ_1 Визуализации](https://github.com/Vendor62/MIPT_practice/tree/main/homework/dd_hw_1)
+[ДЗ_1 Визуализации](https://github.com/Vendor62/MIPT_practice/tree/main/homework/dd_hw_1cd)
