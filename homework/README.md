@@ -14,4 +14,4 @@
 ### Основы ML
 [ДЗ_1 Базовая математика](https://github.com/Vendor62/MIPT_practice/tree/main/homework/fml_hw_1/fml_1.ipynb)<br>
 ### Системы хранения и обработки данных
-[ДЗ_1 создание и нормализация базы данных](https://github.com/Vendor62/MIPT_practice/tree/main/homework/fml_hw_1/fml_1.ipynb)<br>
+[ДЗ_1 создание и нормализация базы данных](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dsps_hw_1/dsps_1.ipynb)<br>
