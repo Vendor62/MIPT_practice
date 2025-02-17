@@ -16,6 +16,7 @@
 [ДЗ_2 KNN](https://github.com/Vendor62/MIPT_practice/tree/main/homework/fml_hw_2/fml_2.ipynb)<br>
 ### Системы хранения и обработки данных
 [ДЗ_1 создание и нормализация базы данных](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dsps_hw_1/dsps_1.ipynb)<br>
-[ДЗ_2 основные операторы PSQL](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dsps_hw_2/dsps_2.ipynb)<br><br>
+[ДЗ_2 основные операторы PSQL](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dsps_hw_2/dsps_2.ipynb)<br>
+[ДЗ_2 оконные функции](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dsps_hw_3/dsps_3.ipynb)<br><br>
 ### Цифровая кафедра
 [ДЗ_1 Ручная реализация KNN](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_1)<br>
