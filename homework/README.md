@@ -19,4 +19,5 @@
 [ДЗ_2 основные операторы PSQL](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dsps_hw_2/dsps_2.ipynb)<br>
 [ДЗ_2 оконные функции](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dsps_hw_3/dsps_3.ipynb)<br><br>
 ### Цифровая кафедра
-[ДЗ_1 Ручная реализация KNN](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_1)<br>
+[ДЗ_1 Ручная реализация KNN](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_1/knn_assignment_0_01.ipynb)<br>
+[ДЗ_1 Ручная реализация loss и reg](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_2/derivatives_assignment_03.ipynb)
