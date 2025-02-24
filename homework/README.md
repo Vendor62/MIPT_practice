@@ -16,9 +16,10 @@
 [ДЗ_2 KNN](https://github.com/Vendor62/MIPT_practice/tree/main/homework/fml_hw_2/fml_2.ipynb)<br>
 [ДЗ_3 Линейная регрессия, градиентный спуск](https://github.com/Vendor62/MIPT_practice/tree/main/homework/fml_hw_3/fml_hw3.ipynb)<br>
 ### Системы хранения и обработки данных
-[ДЗ_1 создание и нормализация базы данных](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dsps_hw_1/dsps_1.ipynb)<br>
-[ДЗ_2 основные операторы PSQL](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dsps_hw_2/dsps_2.ipynb)<br>
-[ДЗ_3 оконные функции](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dsps_hw_3/dsps_3.ipynb)<br><br>
+[ДЗ_1 Cоздание и нормализация базы данных](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dsps_hw_1/dsps_1.ipynb)<br>
+[ДЗ_2 Основные операторы PSQL](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dsps_hw_2/dsps_2.ipynb)<br>
+[ДЗ_3 Оконные функции](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dsps_hw_3/dsps_3.ipynb)<br>
+[ДЗ_4 MongoDB](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dsps_hw_4/dsps_4.ipynb)<br><br>
 ### Цифровая кафедра
 [ДЗ_1 Ручная реализация KNN](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_1/knn_assignment_0_01.ipynb)<br>
 [ДЗ_2 Ручная реализация loss и reg](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_2/derivatives_assignment_03.ipynb)
