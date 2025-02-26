@@ -22,4 +22,5 @@
 [ДЗ_4 MongoDB](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dsps_hw_4/dsps_4.ipynb)<br><br>
 ### Цифровая кафедра
 [ДЗ_1 Ручная реализация KNN](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_1/knn_assignment_0_01.ipynb)<br>
-[ДЗ_2 Ручная реализация loss и reg](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_2/derivatives_assignment_03.ipynb)
+[ДЗ_2 Ручная реализация loss и reg](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_2/derivatives_assignment_03.ipynb)<br>
+[ДЗ_3 Логистическая регрессия](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_3/dd_3.ipynb)
