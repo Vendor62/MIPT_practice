@@ -23,4 +23,5 @@
 ### Цифровая кафедра
 [ДЗ_1 Ручная реализация KNN](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_1/knn_assignment_0_01.ipynb)<br>
 [ДЗ_2 Ручная реализация loss и reg](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_2/derivatives_assignment_03.ipynb)<br>
-[ДЗ_3 Логистическая регрессия](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_3/dd_3.ipynb)
+[ДЗ_3 Логистическая регрессия](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_3/dd_3.ipynb)<br>
+[ДЗ_4 Распределение Лапласса](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_4/laplace_distribution_assignment_0_02.ipynb)<br>
