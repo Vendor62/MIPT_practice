@@ -16,6 +16,7 @@
 [ДЗ_2 KNN](https://github.com/Vendor62/MIPT_practice/tree/main/homework/fml_hw_2/fml_2.ipynb)<br>
 [ДЗ_3 Линейная регрессия, градиентный спуск](https://github.com/Vendor62/MIPT_practice/tree/main/homework/fml_hw_3/fml_hw3.ipynb)<br>
 [ДЗ_4 Логистическая регрессия, градиентный спуск](https://github.com/Vendor62/MIPT_practice/tree/main/homework/fml_hw_4/fml_4.ipynb)<br>
+[ДЗ_5 Решающие деревья](https://github.com/Vendor62/MIPT_practice/tree/main/homework/fml_hw_5/fml_5.ipynb)<br>
 ### Системы хранения и обработки данных
 [ДЗ_1 Cоздание и нормализация базы данных](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dsps_hw_1/dsps_1.ipynb)<br>
 [ДЗ_2 Основные операторы PSQL](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dsps_hw_2/dsps_2.ipynb)<br>
