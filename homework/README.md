@@ -4,10 +4,10 @@
 [ДЗ_1 EDA](https://github.com/Vendor62/MIPT_practice/tree/main/homework/py_hw_1)<br>
 [ДЗ_2 RPS](https://github.com/Vendor62/MIPT_practice/tree/main/homework/py_hw_2)<br>
 [ДЗ_3 HH.RU](https://github.com/Vendor62/MIPT_practice/tree/main/homework/py_hw_3)<br>
-[ДЗ_4 Задачи с собеседований](https://github.com/Vendor62/MIPT_practice/blob/main/homework/py_hw_4/py_hw_4.ipynb)<br><br>
+[ДЗ_4 Задачи с собеседований](https://github.com/Vendor62/MIPT_practice/blob/main/homework/py_hw_4/py_hw_4.ipynb)<br>
 ### ML
 [ДЗ_1 Линейная регрессия](https://github.com/Vendor62/MIPT_practice/tree/main/homework/ml_hw_1)<br>
-[ДЗ_2 Градиентный спуск](https://github.com/Vendor62/MIPT_practice/tree/main/homework/ml_hw_2)<br><br>
+[ДЗ_2 Градиентный спуск](https://github.com/Vendor62/MIPT_practice/tree/main/homework/ml_hw_2)<br>
 ### Цифровая кафедра
 [ДЗ_1 Визуализации](https://github.com/Vendor62/MIPT_practice/tree/main/homework/dd_hw_1cd)<br><br>
 ## 2 семестр
@@ -27,3 +27,4 @@
 [ДЗ_2 Ручная реализация loss и reg](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_2/derivatives_assignment_03.ipynb)<br>
 [ДЗ_3 Логистическая регрессия](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_3/dd_3.ipynb)<br>
 [ДЗ_4 Распределение Лапласса](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_4/laplace_distribution_assignment_0_02.ipynb)<br>
+[ДЗ_5 Метод опорных векторов](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_5/dd_5.ipynb)<br>
