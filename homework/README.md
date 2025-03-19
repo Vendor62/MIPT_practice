@@ -31,3 +31,5 @@
 [ДЗ_4 Распределение Лапласса](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_4/laplace_distribution_assignment_0_02.ipynb)<br>
 [ДЗ_5 Метод опорных векторов](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_5/dd_5.ipynb)<br>
 [ДЗ_6 Решающие деревья](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_6/dd_6.ipynb)<br>
+[ДЗ_7 Bagging](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_7/assignment_bagging_and_oob.ipynb)<br>
+[Курсовой проект](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_project/pr2.ipynb)<br>
