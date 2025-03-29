@@ -33,3 +33,5 @@
 [ДЗ_6 Решающие деревья](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_6/dd_6.ipynb)<br>
 [ДЗ_7 Bagging](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_7/assignment_bagging_and_oob.ipynb)<br>
 [Курсовой проект](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_project/pr2.ipynb)<br>
+### Инжиниринг данных
+[ДЗ_1 Telegram бот с логгированием](https://github.com/Vendor62/MIPT_practice/blob/main/homework/de_2)<br>
