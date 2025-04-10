@@ -34,6 +34,7 @@
 [ДЗ_7 Bagging](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_7/assignment_bagging_and_oob.ipynb)<br>
 [Курсовой проект](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_project/pr2.ipynb)<br>
 [ДЗ_8 Градиентный бустинг](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_8/dd_8.ipynb)<br>
+[ДЗ_9 DBSCAN](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_9/dd_9.ipynb)<br>
 ### Инжиниринг данных
 [ДЗ_1 Telegram бот с логгированием](https://github.com/Vendor62/MIPT_practice/blob/main/homework/de_2)<br>
 [ДЗ_2 Telegram бот с дашбордом](https://github.com/Vendor62/MIPT_practice/blob/main/homework/de_3)<br>
