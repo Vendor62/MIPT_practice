@@ -43,6 +43,7 @@
 [ДЗ_14 CNN](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_14/assignment_fmnist.ipynb)<br>
 [ДЗ_15 Механизм внимания](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_15/dd_15.ipynb)<br>
 [ДЗ_16 Transformers](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_16/NLP_hw01_texts.ipynb)<br>
+[ДЗ_17 LSTM](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_17/semantic_role_marking.ipynb)<br>
 ### Инжиниринг данных
 [ДЗ_1 Telegram бот с логгированием](https://github.com/Vendor62/MIPT_practice/blob/main/homework/de_2)<br>
 [ДЗ_2 Telegram бот с дашбордом](https://github.com/Vendor62/MIPT_practice/blob/main/homework/de_3)<br>
