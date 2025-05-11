@@ -37,6 +37,11 @@
 [ДЗ_9 DBSCAN](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_9/dd_9.ipynb)<br>
 [ДЗ_10 Тензоры](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_10/dd_10.ipynb)<br>
 [ДЗ_11 Классификация MNIST](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_11/assignment_mnist.ipynb)<br>
+[ДЗ_12 Векторные представления слов](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_12/assignment_text_classification.ipynb)<br>
+[ДЗ_13 RNN](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_13/NLP_HW_Lab01_Poetry_generation_v5.ipynb)<br>
+[ДЗ_14 CNN](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_14/assignment_fmnist.ipynb)<br>
+[ДЗ_15 Механизм внимания](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_15/dd_15.ipynb)<br>
+[ДЗ_16 Transformers](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dd_hw_2_16/NLP_hw01_texts.ipynb)<br>
 ### Инжиниринг данных
 [ДЗ_1 Telegram бот с логгированием](https://github.com/Vendor62/MIPT_practice/blob/main/homework/de_2)<br>
 [ДЗ_2 Telegram бот с дашбордом](https://github.com/Vendor62/MIPT_practice/blob/main/homework/de_3)<br>
