@@ -47,3 +47,5 @@
 ### Инжиниринг данных
 [ДЗ_1 Telegram бот с логгированием](https://github.com/Vendor62/MIPT_practice/blob/main/homework/de_2)<br>
 [ДЗ_2 Telegram бот с дашбордом](https://github.com/Vendor62/MIPT_practice/blob/main/homework/de_3)<br>
+### Глубокое обучение
+[ДЗ_1 FMNIST Dataset](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dl_1/dl_1.ipynb)<br>
