@@ -1,0 +1,4 @@
+apache-airflow==2.9.1
+pandas==2.2.2
+scikit-learn==1.4.2
+joblib==1.4.2
