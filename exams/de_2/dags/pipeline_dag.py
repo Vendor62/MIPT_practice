@@ -16,7 +16,7 @@ def notify_failure(context):
     log_url = task_instance.log_url
 
     msg = (
-        f"❗️ Задача '{task_id}' в DAG '{dag_id}' упала!\n"
+        f"Задача '{task_id}' в DAG '{dag_id}' упала!\n"
         f"Ошибка: {exception}\n"
         f"Логи: {log_url}\n"
     )
