@@ -313,4 +313,4 @@ def notify_failure(context):
    - Можно отслеживать историю запуска DAG'ов, частоту падений и длительность.
 
 ## Скриншот работающего DAG
-![](https://github.com/Vendor62/MIPT_practice/exams/de_2/media/01.png)<br><br>
+![](https://raw.githubusercontent.com/Vendor62/MIPT_practice/refs/heads/main/exams/de_2/media/01.png)<br><br>
