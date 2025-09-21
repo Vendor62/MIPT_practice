@@ -49,4 +49,7 @@
 [ДЗ_2 Telegram бот с дашбордом](https://github.com/Vendor62/MIPT_practice/blob/main/homework/de_3)<br>
 ### Глубокое обучение
 [ДЗ_1 FMNIST Dataset](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dl_1/dl_1.ipynb)<br>
-[ДЗ_2 Распознавание капчи](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dl_2/dl_2.ipynb)<br>
+[ДЗ_2 Распознавание капчи](https://github.com/Vendor62/MIPT_practice/blob/main/homework/dl_2/dl_2.ipynb)<br><br>
+## 3 семестр
+### NLP
+[ДЗ_1 Классификация отзывов](https://github.com/Vendor62/MIPT_practice/tree/main/homework/nlp_hw_1)<br>
