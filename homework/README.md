@@ -53,3 +53,4 @@
 ## 3 семестр
 ### NLP
 [ДЗ_1 Классификация отзывов](https://github.com/Vendor62/MIPT_practice/tree/main/homework/nlp_hw_1)<br>
+[ДЗ_2 Поиск по тексту](https://github.com/Vendor62/MIPT_practice/tree/main/homework/nlp_hw_2/nlp_2.ipynb)<br>
