@@ -55,4 +55,6 @@
 [ДЗ_1 Классификация отзывов](https://github.com/Vendor62/MIPT_practice/tree/main/homework/nlp_hw_1)<br>
 [ДЗ_2 Поиск по тексту](https://github.com/Vendor62/MIPT_practice/tree/main/homework/nlp_hw_2/nlp_2.ipynb)<br>
 [ДЗ_3 BERT Fine Tuning](https://github.com/Vendor62/MIPT_practice/tree/main/homework/nlp_hw_3/nlp_3.ipynb)<br>
-[ДЗ_4 Дообучение LLM](https://github.com/Vendor62/MIPT_practice/tree/main/homework/nlp_hw_4/nlp_4.ipynb)<br>
+[ДЗ_4 Дообучение LLM](https://github.com/Vendor62/MIPT_practice/tree/main/homework/nlp_hw_4/nlp_4.ipynb)<br><br>
+### Современные модели МО
+[ДЗ_1 Диффузионные модели](https://github.com/Vendor62/MIPT_practice/tree/main/homework/mml_1/mml_1.ipynb)<br>
