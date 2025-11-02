@@ -58,3 +58,4 @@
 [ДЗ_4 Дообучение LLM](https://github.com/Vendor62/MIPT_practice/tree/main/homework/nlp_hw_4/nlp_4.ipynb)<br><br>
 ### Современные модели МО
 [ДЗ_1 Диффузионные модели](https://github.com/Vendor62/MIPT_practice/tree/main/homework/mml_1/mml_1.ipynb)<br>
+[ДЗ_2 Дообучение модели](https://github.com/Vendor62/MIPT_practice/tree/main/homework/mml_2/mml_2.ipynb)<br>
