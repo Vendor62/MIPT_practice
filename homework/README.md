@@ -59,3 +59,4 @@
 ### Современные модели МО
 [ДЗ_1 Диффузионные модели](https://github.com/Vendor62/MIPT_practice/tree/main/homework/mml_1/mml_1.ipynb)<br>
 [ДЗ_2 Дообучение модели](https://github.com/Vendor62/MIPT_practice/tree/main/homework/mml_2/mml_2.ipynb)<br>
+[ДЗ_5 Arithmetic LoRA](https://github.com/Vendor62/MIPT_practice/tree/main/homework/mml_5/mml5.ipynb)<br>
