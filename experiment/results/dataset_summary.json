@@ -1,0 +1,11 @@
+{
+  "dataset": "combined_manual_gold_v2",
+  "posts": 657,
+  "gold_stories": 300,
+  "singleton_stories": 180,
+  "non_singleton_stories": 120,
+  "old_rows": 333,
+  "expansion_rows": 324,
+  "old_new_overlap": 0,
+  "namespace_audit_ok": true
+}

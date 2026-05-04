@@ -1,0 +1,4 @@
+method,pairwise_f1,ari,nmi,false_merge_rate,false_split_rate
+semantic_only,0.121136,0.106462,0.791927,0.078034,0.555556
+hybrid_v4_1_soft_entity_penalty,0.268808,0.258885,0.876385,0.020797,0.500000
+deepseek_chat_llm,0.294821,0.285049,0.870684,0.022145,0.481481

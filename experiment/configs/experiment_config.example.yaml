@@ -1,0 +1,36 @@
+dataset:
+  name: combined_manual_gold_v2
+  notes: >
+    Reference configuration. The original experiment used private PostgreSQL + Neo4j data sources.
+    This public repo does not ship credentials or data dumps.
+
+paths:
+  combined_labels_csv: ./data/private/combined_manual_gold_labels_v2.csv
+  combined_split_csv: ./data/private/combined_split_v2.csv
+  combined_pairwise_features_csv: ./data/private/combined_pairwise_features_v2.csv
+
+evaluation:
+  replay_order: chronological
+  split:
+    train_frac: 0.30
+    dev_frac: 0.30
+    test_frac: 0.40
+  methods:
+    - semantic_only
+    - semantic_time
+    - hybrid_graph_v1_entity
+    - hybrid_v4_1_soft_entity_penalty
+  tuning:
+    tune_on: dev
+    constraints:
+      false_merge_rate_max: 0.50
+      pairwise_precision_min: 0.10
+      min_predicted_story_count_ratio: 0.50
+
+llm_baseline:
+  provider: deepseek
+  model_env: DEEPSEEK_MODEL
+  api_url_env: DEEPSEEK_API_URL
+  api_key_env: DEEPSEEK_API_KEY
+  retrieval_top_k: 8
+  prompt_max_chars: 1500

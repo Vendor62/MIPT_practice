@@ -1,0 +1,2 @@
+method,pairwise_f1,ari,nmi,false_merge_rate,false_split_rate
+deepseek_chat_llm,0.294821,0.285049,0.870684,0.022145,0.481481
