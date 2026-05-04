@@ -1,10 +1,10 @@
 from __future__ import annotations
 
 """
-Compact DeepSeek baseline (OpenAI-compatible chat completions).
+Компактный DeepSeek baseline (OpenAI-compatible chat completions).
 
-This is a reference implementation used to describe the protocol.
-It is intentionally decoupled from private data sources.
+Это reference-реализация, которая фиксирует протокол LLM baseline.
+Она специально отделена от приватных источников данных.
 """
 
 import json
@@ -41,10 +41,10 @@ def deepseek_choose_story(
     candidate_stories: list[dict[str, Any]],
 ) -> dict[str, Any]:
     """
-    Returns JSON:
+    Возвращает JSON:
       { decision: "attach"|"new_story", selected_story_id: str|null, confidence: number, short_reason: str }
 
-    IMPORTANT: gold labels must never be included in the prompt.
+    ВАЖНО: gold labels нельзя включать в prompt.
     """
     if not cfg.api_key:
         raise RuntimeError("DEEPSEEK_API_KEY is missing (env)")

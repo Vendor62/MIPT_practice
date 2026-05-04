@@ -1,36 +1,35 @@
-# Methodology notes
+# Методологические заметки
 
-## Why not optimize raw accuracy?
+## Почему не оптимизируем raw accuracy?
 
-For story clustering, raw post-level accuracy can look high even when the model makes
-structurally bad errors (e.g., merging two unrelated stories into one cluster).
-Therefore the evaluation focuses on structural clustering metrics.
+В задаче story clustering raw accuracy на уровне постов может выглядеть высокой даже при
+структурно плохих ошибках (например, когда две несвязанные истории склеиваются в один кластер).
+Поэтому оценка фокусируется на структурных метриках кластеризации.
 
-## Structural objective and anti-merge constraints
+## Структурная цель и anti-merge ограничения
 
-Thresholds are tuned on **dev** only.
-The tuning objective rewards cluster quality (pairwise F1, ARI, NMI) while penalizing
-false merges and false splits.
+Пороги тюнятся только на **dev**.
+Целевая функция поощряет качество кластеров (pairwise F1, ARI, NMI) и штрафует
+false merges и false splits.
 
-Additionally, anti-merge constraints ensure the tuned configuration does not collapse
-everything into a few large clusters.
+Дополнительно, anti-merge ограничения не дают решению “схлопнуться” в несколько больших кластеров.
 
-## Namespace audit for gold_story_id
+## Namespace-аудит для `gold_story_id`
 
-When combining two independently labeled datasets, raw IDs can collide (both can start from `1`).
-The experiment enforces separate namespaces:
+При объединении двух независимо размеченных датасетов “сырые” ID могут пересекаться (оба могут начинаться с `1`).
+В эксперименте принудительно используются разные namespace:
 - old gold: `OLD_*`
 - expansion gold: `EXP2_*`
 
-This prevents accidental cross-source story merges.
+Это предотвращает случайные story merges между источниками.
 
-## No gold leakage
+## Без leakage по gold
 
-- Gold labels are never used as features in the assignment decision.
-- The LLM baseline never receives gold labels in the prompt.
+- Gold labels никогда не используются как признаки в решении assignment.
+- LLM baseline никогда не получает gold labels в prompt.
 
-## Limitations
+## Ограничения
 
-- The public repo omits private data sources and internal graph feature computation.
-- Graph-derived features are represented as an interface/hook to keep the evaluation logic clear.
+- Публичный репозиторий не включает приватные источники данных и внутренний расчёт графовых фич.
+- Graph-derived features представлены в виде интерфейса/хука, чтобы оставить логику оценки понятной.
 

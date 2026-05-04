@@ -57,7 +57,7 @@ def evaluate(pred_story_id: dict[int, str], gold_story_id: dict[int, str], unive
     if not posts:
         return Metrics(0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 
-    # Assignment accuracy (secondary)
+    # точность назначения поста (вторичная метрика)
     correct = 0
     for p in posts:
         correct += 1 if pred_story_id.get(p) == gold_story_id.get(p) else 0
@@ -88,14 +88,14 @@ def evaluate(pred_story_id: dict[int, str], gold_story_id: dict[int, str], unive
     ari = float(adjusted_rand_score(y_true, y_pred))
     nmi = float(normalized_mutual_info_score(y_true, y_pred))
 
-    # Predicted/gold story counts + singleton stats to proxy split/merge rates
+    # Кол-во predicted/gold историй + прокси split/merge
     gold_stories = {gold_story_id[p] for p in posts}
     pred_stories = {pred_story_id.get(p, "") for p in posts}
 
     gold_by = _clusters_from_pred(gold_story_id, set(posts))
     pred_by = _clusters_from_pred(pred_story_id, set(posts))
 
-    # false merge: predicted cluster contains >=2 gold stories
+    # false merge: pred-кластер содержит >=2 gold-историй
     fm = 0
     for members in pred_by.values():
         gs = {gold_story_id[p] for p in members}
@@ -103,7 +103,7 @@ def evaluate(pred_story_id: dict[int, str], gold_story_id: dict[int, str], unive
             fm += 1
     fmr = fm / max(1, len(pred_by))
 
-    # false split: gold story split across >=2 predicted clusters
+    # false split: gold-история разделена на >=2 pred-кластера
     fs = 0
     pred_of = {p: pred_story_id.get(p, "") for p in posts}
     for members in gold_by.values():

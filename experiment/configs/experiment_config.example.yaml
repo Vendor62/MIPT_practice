@@ -1,8 +1,8 @@
 dataset:
   name: combined_manual_gold_v2
   notes: >
-    Reference configuration. The original experiment used private PostgreSQL + Neo4j data sources.
-    This public repo does not ship credentials or data dumps.
+    Пример конфигурации. Исходный эксперимент использовал приватные источники PostgreSQL и Neo4j.
+    В этом публичном репозитории нет кредов и дампов данных.
 
 paths:
   combined_labels_csv: ./data/private/combined_manual_gold_labels_v2.csv

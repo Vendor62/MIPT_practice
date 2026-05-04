@@ -1,13 +1,13 @@
 from __future__ import annotations
 
 """
-Online assignment evaluation (reference implementation).
+Оценка online assignment (reference-реализация).
 
-Key idea:
-- Posts arrive in chronological order.
-- For each post, assign to an existing story cluster if similarity >= threshold, else create new story.
-- Threshold is tuned on dev only with anti-merge constraints.
-- Gold labels are used only to compute metrics and tune thresholds; never inside the assignment decision.
+Ключевая идея:
+- Посты приходят в хронологическом порядке.
+- Для каждого поста: либо прикрепляем к существующему story cluster, если similarity >= threshold, либо создаём новую story.
+- Threshold тюнится только на dev с anti-merge ограничениями.
+- Gold labels используются только для расчёта метрик и тюнинга порогов; никогда — внутри решения assignment.
 """
 
 from dataclasses import dataclass
@@ -32,7 +32,7 @@ def simulate_online(order: list[int], score: ScoreFn, cfg: OnlineCfg) -> dict[in
         best_sid = None
         best_sc = -1.0
         for sid, mids in members.items():
-            # representative = last post in the story (simple online heuristic)
+            # representative = последний пост в истории (простая online-эвристика)
             rep = mids[-1]
             sc = float(score(pid, rep))
             if sc > best_sc:
@@ -71,7 +71,7 @@ def tune_threshold_dev(
     for thr in candidate_thresholds:
         pred = simulate_online(order_train_dev, score, OnlineCfg(threshold=thr))
         m = evaluate(pred, gold, dev_ids, order_train_dev).as_dict()
-        # constraints
+        # ограничения (anti-merge и др.)
         if int(m["predicted_story_count"]) < min_pred_stories:
             continue
         if float(m["false_merge_rate"]) > max_false_merge_rate:

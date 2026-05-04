@@ -8,6 +8,9 @@ data/raw/
 data/private/
 *.sqlite
 *.db
+# Сгенерированные графики не коммитим
+figures/*.png
+
 __pycache__/
 .pytest_cache/
 .venv/

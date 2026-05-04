@@ -1,15 +1,15 @@
 from __future__ import annotations
 
 """
-Pairwise feature table builder (public reference).
+Сборка pairwise feature-таблицы (публичная reference-версия).
 
-In the production experiment this feature table was computed from:
-- Postgres embeddings (semantic cosine)
-- Post timestamps (temporal proximity)
-- heuristic entity extraction (entity Jaccard)
-- internal graph pipeline features (Neo4j / neighborhood / relation types)
+В production-эксперименте эта таблица считалась из:
+- эмбеддингов Postgres (semantic cosine)
+- времени постов (temporal proximity)
+- эвристического entity extraction (entity Jaccard)
+- фич внутреннего graph pipeline (Neo4j / neighborhood / relation types)
 
-The public repository keeps the *interface* and evaluation logic; graph features are placeholders.
+Публичный репозиторий оставляет *интерфейс* и логику оценки; graph features здесь — placeholders.
 """
 
 from dataclasses import dataclass
@@ -53,7 +53,7 @@ def cosine(a: np.ndarray, b: np.ndarray) -> float:
 
 def temporal_score(ts_a: datetime, ts_b: datetime, half_life_hours: float = 36.0) -> float:
     dt_h = abs((ts_a - ts_b).total_seconds()) / 3600.0
-    # exponential decay
+    # экспоненциальное затухание
     return float(2 ** (-dt_h / max(1e-6, half_life_hours)))
 
 
@@ -67,9 +67,8 @@ def jaccard(a: set[str], b: set[str]) -> float:
 
 def graph_features_hook(post_id_a: int, post_id_b: int) -> dict[str, float]:
     """
-    In the production experiment this feature was computed by the internal
-    TeleHub graph pipeline. The public repository keeps only the interface
-    and evaluation logic.
+    В production-эксперименте эти фичи считались внутренним TeleHub graph pipeline.
+    В публичном репозитории оставлен только интерфейс и логика оценки.
     """
     return {
         "graph_neighborhood_jaccard": 0.0,

@@ -1,5 +1,9 @@
 from __future__ import annotations
 
+"""
+Вспомогательные функции для чтения CSV/JSON и стабильной сортировки постов по времени.
+"""
+
 import csv
 import json
 from dataclasses import dataclass

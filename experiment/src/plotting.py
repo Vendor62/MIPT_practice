@@ -1,5 +1,9 @@
 from __future__ import annotations
 
+"""
+Построение иллюстраций из агрегированных результатов в `results/` (локально создаёт `.png` в `figures/`).
+"""
+
 import json
 from pathlib import Path
 
@@ -20,7 +24,7 @@ def main() -> int:
 
     df = pd.read_csv(results / "final_metrics_summary.csv")
 
-    # final_metrics_f1_ari_nmi.png
+    # итог: F1, ARI, NMI по методам
     fig, ax = plt.subplots(figsize=(8.6, 3.6))
     x = range(len(df))
     ax.bar([i - 0.25 for i in x], df["pairwise_f1"], width=0.25, label="Pairwise F1")
@@ -33,7 +37,7 @@ def main() -> int:
     ax.legend(loc="upper left", ncol=3)
     _save(fig, figs / "final_metrics_f1_ari_nmi.png")
 
-    # hybrid_delta_vs_semantic_target.png
+    # дельта Hybrid относительно Semantic-only
     sem = df[df["method"] == "semantic_only"].iloc[0]
     hyb = df[df["method"] == "hybrid_v4_1_soft_entity_penalty"].iloc[0]
     fig, ax = plt.subplots(figsize=(5.8, 3.2))
@@ -43,38 +47,48 @@ def main() -> int:
     )
     ax.axhline(0.0, color="black", linewidth=1)
     ax.grid(axis="y", alpha=0.25)
-    ax.set_title("Hybrid − Semantic-only (test)")
+    ax.set_title("Hybrid минус Semantic-only (test)")
     _save(fig, figs / "hybrid_delta_vs_semantic_target.png")
 
-    # false_merge_false_split_comparison.png
+    # сравнение FMR и FSR
     fig, ax = plt.subplots(figsize=(8.6, 3.6))
-    ax.bar([i - 0.2 for i in x], df["false_merge_rate"], width=0.4, label="False merge rate")
-    ax.bar([i + 0.2 for i in x], df["false_split_rate"], width=0.4, label="False split rate")
+    ax.bar([i - 0.2 for i in x], df["false_merge_rate"], width=0.4, label="False merge rate (FMR)")
+    ax.bar([i + 0.2 for i in x], df["false_split_rate"], width=0.4, label="False split rate (FSR)")
     ax.set_xticks(list(x))
     ax.set_xticklabels(df["method"], rotation=15, ha="right")
     ax.grid(axis="y", alpha=0.25)
     ax.legend(loc="upper right")
     _save(fig, figs / "false_merge_false_split_comparison.png")
 
-    # dataset_story_composition.png
+    # доля singleton / non-singleton в gold
     ds = json.loads((results / "dataset_summary.json").read_text(encoding="utf-8"))
     fig, ax = plt.subplots(figsize=(5.6, 3.2))
-    ax.pie([ds["singleton_stories"], ds["non_singleton_stories"]], labels=["singleton", "non-singleton"], autopct="%1.1f%%")
-    ax.set_title("Gold story composition")
+    ax.pie(
+        [ds["singleton_stories"], ds["non_singleton_stories"]],
+        labels=["singleton", "non-singleton"],
+        autopct="%1.1f%%",
+    )
+    ax.set_title("Состав gold stories по размеру")
     _save(fig, figs / "dataset_story_composition.png")
 
-    # gold_story_size_distribution.png (placeholder)
+    # gold_story_size_distribution.png (заглушка)
     fig, ax = plt.subplots(figsize=(5.6, 3.2))
-    ax.text(0.5, 0.5, "Gold story size distribution\n(not included in public repo)", ha="center", va="center")
+    ax.text(
+        0.5,
+        0.5,
+        "Распределение размеров gold stories\n(в публичном репозитории не включено)",
+        ha="center",
+        va="center",
+    )
     ax.set_axis_off()
     _save(fig, figs / "gold_story_size_distribution.png")
 
-    # experiment_progression_summary.png (schematic)
+    # схема этапов эксперимента (текст)
     fig, ax = plt.subplots(figsize=(7.8, 2.6))
     ax.text(
         0.5,
         0.5,
-        "Progression: weak labels → manual gold v1 → expansion v2 → combined v2\nMetrics: semantic vs hybrid vs LLM baseline",
+        "Цепочка: weak labels → manual gold v1 → expansion v2 → combined v2\nМетрики: semantic vs hybrid vs LLM baseline",
         ha="center",
         va="center",
     )
@@ -86,4 +100,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

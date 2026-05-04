@@ -1,55 +1,55 @@
-# Experiment design (public)
+# Дизайн эксперимента (публичная версия)
 
-## Hypothesis
+## Гипотеза
 
-Hybrid story tracking that combines semantic similarity with temporal and graph-derived signals
-reduces false merges and improves clustering quality over a semantic-only baseline.
+Гибридный story tracking, который объединяет семантическую близость с временными и графовыми сигналами,
+снижает число ложных склеек (false merges) и улучшает качество кластеризации по сравнению с semantic-only baseline.
 
-## Compared methods
+## Сравниваемые методы
 
-- **semantic_only**: online assignment using only embedding similarity.
-- **hybrid_v4_1_soft_entity_penalty**: hybrid scoring (semantic + temporal + entity/event/graph signals) with anti-merge bias.
-- **deepseek_chat_llm**: LLM baseline that decides attach vs new story using a retrieval shortlist of candidate stories.
+- **semantic_only**: online assignment только по embedding similarity.
+- **hybrid_v4_1_soft_entity_penalty**: hybrid scoring (semantic + temporal + entity/event/graph signals) с anti-merge bias.
+- **deepseek_chat_llm**: LLM baseline, который выбирает attach vs new story по retrieval shortlist кандидатов-историй.
 
-## Dataset
+## Датасет
 
 Manual gold benchmark **combined_manual_gold_v2**:
-- 657 posts
+- 657 постов
 - 300 gold stories
 - 180 singleton stories
 - 120 non-singleton stories
 
-Gold is created by human labeling. The public repo does not include the labeled texts.
+Gold получен из ручной разметки. Публичный репозиторий не содержит размеченных текстов.
 
-## Splits
+## Сплиты
 
-Chronological split by post time:
+Хронологический сплит по времени публикации:
 - 30% train
 - 30% dev
 - 40% test
 
-## Leakage prevention
+## Предотвращение leakage
 
-- Gold labels are used **only** for evaluation and dev-time tuning of thresholds.
-- The online assignment decision never sees gold.
-- The LLM prompt never includes gold labels.
+- Gold labels используются **только** для оценки и для dev-тюнинга порогов.
+- Решение online assignment никогда не видит gold.
+- В LLM prompt никогда не добавляются gold labels.
 
-## Metrics
+## Метрики
 
-Primary:
+Основные:
 - pairwise F1
 - ARI
 - NMI
 - false merge rate (FMR)
 - false split rate (FSR)
 
-Secondary:
-- post assignment accuracy (informational only; can be misleading for clustering)
+Дополнительные:
+- post assignment accuracy (только справочно; может вводить в заблуждение для кластеризации)
 
-## LLM baseline protocol (DeepSeek)
+## Протокол LLM baseline (DeepSeek)
 
-- Online replay in chronological order.
-- Candidate retrieval: top-K (5–8) candidate stories by semantic similarity to already-seen posts.
-- Prompt includes: current post text + compact representatives of candidate stories.
-- Output: strict JSON `{decision, selected_story_id|null, confidence, short_reason}`.
+- Online replay в хронологическом порядке.
+- Candidate retrieval: top-K (5–8) candidate stories по semantic similarity к уже увиденным постам.
+- Prompt: текст текущего поста + компактные представители candidate stories.
+- Выход: строгий JSON `{decision, selected_story_id|null, confidence, short_reason}`.
 

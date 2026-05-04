@@ -1,2 +1,1 @@
-"""Hybrid story tracking public experiment code."""
-
+"""Публичный код эксперимента по гибридному story tracking."""
