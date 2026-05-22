@@ -1,0 +1,4 @@
+group,method,metric,unified_v2,subgroup_v1,abs_diff,note
+all_test,semantic_only,pairwise_f1,0.12113564668769715,0.3255813953488372,0.20444574866114001,v1 used different evaluator for semantic_only replay
+all_test,hybrid_v4_1_soft_entity_penalty,pairwise_f1,0.2688081149619611,0.2688081149619611,0.0,v1 used different evaluator for semantic_only replay
+all_test,deepseek_chat_llm,pairwise_f1,0.2948207171314741,0.2948207171314741,0.0,v1 used different evaluator for semantic_only replay

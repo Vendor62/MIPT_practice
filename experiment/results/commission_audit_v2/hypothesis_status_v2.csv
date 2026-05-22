@@ -1,0 +1,4 @@
+hypothesis_id,statement,primary_metric,target,point_delta_hybrid_minus_semantic,bootstrap_ci_crosses_zero,status
+H1,Hybrid improves clustering vs semantic-only,pairwise_f1,+15 pp,0.14767246827426395,false,partial/not_supported
+H2,Hybrid not worse than LLM baseline,pairwise_f1,strict non-inferiority not formally testable ex post,,true,not_formally_testable
+H3,Hybrid reduces false splits and singleton stories,"false_split_rate, singleton_predicted_rate",FSR -25pp; singleton -30% if in protocol,,,partial
