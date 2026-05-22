@@ -1,0 +1,64 @@
+Business Source License 1.1
+
+Licensor:             Dmitry Polikarpov
+Licensed Work:        NewsHub Research Showcase
+                      The Licensed Work is (c) 2026 Dmitry Polikarpov
+Additional Use Grant: None. Any use of the Licensed Work other than
+                      "Permitted Use" below requires a separate written
+                      permission from the Licensor.
+Change Date:          Four years from the date each version of the Licensed
+                      Work is made publicly available.
+Change License:       Apache License, Version 2.0
+
+-----------------------------------------------------------------------------
+
+PERMITTED USE
+
+The Licensor hereby grants you the right to copy, modify, create derivative
+works, redistribute, and make non-production use of the Licensed Work.
+
+"Non-production use" means any use of the Licensed Work other than use in a
+production environment for any for-profit purpose.
+
+If your use of the Licensed Work does not comply with the requirements
+currently in effect as described in this License, you must purchase a
+commercial license from the Licensor, its affiliated entities, or authorized
+resellers, or you must refrain from using the Licensed Work.
+
+All copies of the original and modified Licensed Work, and derivative works
+of the Licensed Work, are subject to this License. This License applies
+separately for each version of the Licensed Work and the Change Date may vary
+for each version of the Licensed Work released by Licensor.
+
+You must conspicuously display this License on each original or modified copy
+of the Licensed Work. If you receive the Licensed Work in original or modified
+form from a third party, the terms and conditions set forth in this License
+apply to your use of that work.
+
+On the Change Date for a particular version, the terms of this License for
+that version will no longer apply, and the Licensed Work will be provided
+under the terms of the Change License.
+
+-----------------------------------------------------------------------------
+
+DISCLAIMER OF WARRANTIES
+
+THE LICENSED WORK IS PROVIDED "AS IS" AND THE LICENSOR DISCLAIMS ALL
+WARRANTIES AND CONDITIONS, EXPRESS OR IMPLIED, INCLUDING (WITHOUT LIMITATION)
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+NON-INFRINGEMENT, AND TITLE.
+
+THE LICENSOR HEREBY DISCLAIMS ALL LIABILITY, WHETHER BASED ON CONTRACT, TORT
+(INCLUDING NEGLIGENCE), STRICT LIABILITY, OR OTHERWISE, INCLUDING (WITHOUT
+LIMITATION) FOR COST OF SUBSTITUTE GOODS OR SERVICES, LOST PROFITS, LOST
+DATA, LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR
+ANY AND ALL OTHER COMMERCIAL DAMAGES OR LOSSES, EVEN IF THE LICENSOR HAS BEEN
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+-----------------------------------------------------------------------------
+
+(c) 2026 Dmitry Polikarpov. All rights reserved.
+
+"Business Source License" is a trademark of MariaDB Corporation Ab.
+The Business Source License 1.1 text is available at
+<https://mariadb.com/bsl11/>.

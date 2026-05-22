@@ -1,0 +1,36 @@
+{
+  "feature_cols": [
+    "gliner_score",
+    "span_start",
+    "span_end",
+    "span_char_len",
+    "raw_char_len",
+    "text_char_len",
+    "word_count_raw",
+    "word_count_norm",
+    "token_count",
+    "is_single_token",
+    "contains_digit",
+    "contains_latin",
+    "contains_cyrillic",
+    "contains_hyphen",
+    "is_all_caps_like",
+    "in_first_200_chars",
+    "has_role_noun",
+    "has_generic_head",
+    "has_descriptor_prefix",
+    "alias_hit_person",
+    "alias_hit_org",
+    "known_location_hit",
+    "source_cue_hit",
+    "looks_like_role_phrase",
+    "looks_like_descriptor_org",
+    "in_weak_org_phrases",
+    "in_generic_person_phrases",
+    "in_generic_bucket",
+    "label"
+  ],
+  "cat_features": [
+    "label"
+  ]
+}
