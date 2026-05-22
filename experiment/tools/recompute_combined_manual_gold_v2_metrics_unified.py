@@ -1,9 +1,11 @@
 #!/usr/bin/env python3.11
 """
-audit_and_recompute_story_tracking_metrics_v2 — единый пересчёт метрик combined_manual_gold_v2.
+audit_and_recompute_story_tracking_metrics_v2 — сквозной пересчёт метрик для
+сводного размеченного набора combined_manual_gold_v2.
 
-Использует pilot_eval_v2_assignment_lib как source of truth для формул.
-Не вызывает LLM, не пересобирает датасет, не пишет fulltext в sync_out.
+Формулы берутся из pilot_eval_v2_assignment_lib как из единого источника правды.
+Сценарий не обращается к LLM, не пересобирает набор данных и не пишет полные
+тексты в sync_out.
 """
 
 from __future__ import annotations

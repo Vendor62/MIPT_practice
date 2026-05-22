@@ -2,8 +2,9 @@
 """
 build_same_source_graph_advantage_extension_preview_v1
 
-Graph-advantage preview extension (same source logic as combined v2 seed).
-No metrics, no manual gold for selection, no fulltext in sync_out.
+Предварительный набор по «графовому преимуществу»: используется та же логика
+источника, что и при сборе сводного набора v2. Без расчёта метрик, без опоры
+на ручную разметку при отборе и без полных текстов в sync_out.
 """
 
 from __future__ import annotations

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3.11
-"""trace_hybrid_v4_1_official_saved_provenance_v1 — forensic audit, read-only outputs."""
+"""trace_hybrid_v4_1_official_saved_provenance_v1 — разбор расхождений с сохранёнными предсказаниями гибрида v4.1 (только чтение, без записи)."""
 
 from __future__ import annotations
 

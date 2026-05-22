@@ -1,5 +1,5 @@
 #!/usr/bin/env python3.11
-"""rerun_v3d_eval_with_neo4j_graph_features_v2 — Neo4j pairwise + diagnostic eval (new paths only)."""
+"""rerun_v3d_eval_with_neo4j_graph_features_v2 — пересборка парных признаков v3d с подмешиванием Neo4j и диагностический прогон оценки (только новые пути)."""
 
 from __future__ import annotations
 

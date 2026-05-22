@@ -1,5 +1,5 @@
 #!/usr/bin/env python3.11
-"""search_combined_v2_generation_context_v1 — producer provenance grep (read-only)."""
+"""search_combined_v2_generation_context_v1 — поиск следов того, как был собран сводный набор v2 (только чтение)."""
 
 from __future__ import annotations
 

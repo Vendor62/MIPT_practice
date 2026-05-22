@@ -1,16 +1,29 @@
-# Commission audit v2 — published metrics
+# `commission_audit_v2/` — таблицы для итоговой проверки
 
-Официальные агрегированные метрики для **combined_manual_gold_v2** (evaluator: `pilot_eval_v2_assignment_lib`, пороги frozen на dev).
+Здесь лежат основные агрегированные таблицы по сводному размеченному набору
+**combined_manual_gold_v2**. Цифры собраны через библиотеку оценки
+`pilot_eval_v2_assignment_lib`, пороги зафиксированы на dev-подвыборке.
 
-| Файл | Содержание |
-|------|------------|
-| `unified_metrics_v2.csv` | Основные метрики по method × split (semantic, hybrid saved, deepseek saved, …). |
-| `bootstrap_confidence_intervals_unified_v2.csv` | Stratified bootstrap 95% CI (gold-story), deltas hybrid−semantic / hybrid−deepseek. |
-| `subgroup_metrics_unified_v2.csv` | Subgroup breakdown (story size, channel, …). |
-| `subgroup_metrics_diff_vs_v1.csv` | Diff subgroup metrics vs legacy v1 export. |
-| `hypothesis_status_v2.csv` | Статус гипотез H1/H2/H3 для текста ВКР. |
+## Файлы
 
-**Test reference (hybrid saved):** `hybrid_v4_1_soft_entity_penalty` pairwise F1 ≈ 0.269.  
-**Note:** hybrid replay formula on current pairwise features does not reproduce saved predictions; use saved preds for commission numbers.
+| Файл | Что содержит |
+|------|--------------|
+| `unified_metrics_v2.csv` | Основные метрики в разрезе «метод × подвыборка» (semantic-only, сохранённый гибрид, сохранённый DeepSeek и пр.). |
+| `bootstrap_confidence_intervals_unified_v2.csv` | Доверительные интервалы 95% по стратифицированному бутстрэпу (на уровне историй) и разницы hybrid − semantic и hybrid − deepseek. |
+| `subgroup_metrics_unified_v2.csv` | Метрики в разрезе подгрупп: размер истории, канал и т. п. |
+| `subgroup_metrics_diff_vs_v1.csv` | Сравнение подгрупповых метрик с предыдущей версией выгрузки (v1). |
+| `hypothesis_status_v2.csv` | Статус основных гипотез H1/H2/H3 для текста ВКР. |
 
-Сгенерировано: `recompute_combined_manual_gold_v2_metrics_unified.py` (2026-05-21 server run).
+## Ориентир
+
+Главный ориентир по тестовой подвыборке (сохранённый гибрид):
+`hybrid_v4_1_soft_entity_penalty` — pairwise F1 ≈ 0.269.
+
+## Важная оговорка
+
+Если запустить формулу гибрида заново на текущих парных признаках, точные
+сохранённые предсказания она не воспроизведёт. Для официальных чисел нужно
+опираться на сохранённые предсказания, а не на повторный расчёт по формуле.
+
+Таблицы собраны сценарием `recompute_combined_manual_gold_v2_metrics_unified.py`
+(серверный прогон, 2026-05-21).

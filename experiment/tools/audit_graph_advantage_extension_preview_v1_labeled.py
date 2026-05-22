@@ -2,8 +2,9 @@
 """
 audit_graph_advantage_extension_preview_v1_labeled
 
-Import manual labeling for graph-advantage preview, safety/overlap audit,
-weak-block survival, expansion decision gate. No LLM, no fulltext in sync_out.
+Импорт ручной разметки для предварительного набора по «графовому преимуществу»,
+проверка безопасности и пересечений, выживаемость слабых блоков и решение о
+переходе к полному расширению. Без вызовов LLM и без полных текстов в sync_out.
 """
 
 from __future__ import annotations

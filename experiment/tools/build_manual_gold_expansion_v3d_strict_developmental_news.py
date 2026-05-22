@@ -2,8 +2,9 @@
 """
 build_manual_gold_expansion_v3d_strict_developmental_news
 
-Strict news-only developmental manual gold expansion (v3d).
-No LLM, no hybrid metrics, no fulltext in sync_out.
+Сбор строгого расширения для ручной разметки (v3d): только новости и только
+«развивающиеся» сюжеты. Без вызовов LLM, без гибридных метрик и без полных
+текстов в sync_out.
 """
 
 from __future__ import annotations

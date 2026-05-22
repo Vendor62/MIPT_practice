@@ -1,5 +1,5 @@
 #!/usr/bin/env python3.11
-"""audit_v3d_graph_feature_coverage — Postgres/Neo4j/pairwise coverage vs old combined."""
+"""audit_v3d_graph_feature_coverage — покрытие графовых признаков (Postgres/Neo4j/парные) на v3d по сравнению со старым сводным набором."""
 
 from __future__ import annotations
 

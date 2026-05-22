@@ -2,8 +2,8 @@
 """
 build_manual_gold_expansion_v3c_developmental_stories
 
-Developmental-story expansion set for manual gold labeling.
-Focus: evolving storylines, not near-duplicate repost clusters.
+Сбор расширенного набора для ручной разметки: «развивающиеся» сюжеты.
+Главное — отбирать развивающиеся истории, а не кластеры почти одинаковых репостов.
 """
 
 from __future__ import annotations

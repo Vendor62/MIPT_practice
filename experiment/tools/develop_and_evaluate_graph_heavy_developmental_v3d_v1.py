@@ -2,8 +2,9 @@
 """
 develop_and_evaluate_graph_heavy_developmental_v3d_v1
 
-Exploratory graph-heavy variants on v3d with dev/test split by gold_story_id.
-No prod writes, no LLM, no fulltext in sync_out.
+Поисковые «графово-нагруженные» варианты гибрида на наборе v3d с разбиением
+dev/test по gold_story_id. Без записи в прод, без вызовов LLM и без полных
+текстов в sync_out.
 """
 
 from __future__ import annotations

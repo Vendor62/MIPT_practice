@@ -1,5 +1,5 @@
 #!/usr/bin/env python3.11
-"""Validate manual_gold_expansion_v3d strict developmental labeling set."""
+"""Проверка набора для ручной разметки manual_gold_expansion_v3d (строгий «развивающийся» режим)."""
 
 from __future__ import annotations
 

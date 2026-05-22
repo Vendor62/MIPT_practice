@@ -2,8 +2,8 @@
 """
 audit_labeled_v3c_whitelist_and_prepare_clean_eval
 
-Whitelist/channel audit, clean v3c gold export, optional diagnostic eval.
-No LLM, no fulltext in sync_out.
+Проверка белого списка каналов, выгрузка очищенного gold-набора v3c и опциональный
+диагностический прогон оценки. Без вызовов LLM и без полных текстов в sync_out.
 """
 
 from __future__ import annotations
