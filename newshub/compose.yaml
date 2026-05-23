@@ -429,6 +429,29 @@ services:
     networks:
       - newshub-network
 
+  monitor:
+    container_name: newshub-monitor
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: python -m app.monitor
+    env_file:
+      - .env
+    environment:
+      PYTHONPATH: /app
+      ALERT_BACKEND: docker
+      ALERT_DOCKER_PROJECT: ${ALERT_DOCKER_PROJECT:-newshub}
+      ALERT_DOCKER_SERVICES: "${ALERT_DOCKER_SERVICES:-app,bot,celery_worker_summarize,celery_worker_dispatch,topic_worker,celery_beat,celery_worker_digest,embeddings_service,embeddings_worker,embeddings_worker_ie}"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    depends_on:
+      app:
+        condition: service_started
+    restart: unless-stopped
+    logging: *default_logging
+    networks:
+      - newshub-network
+
 networks:
   newshub-network:
     name: newshub-network
